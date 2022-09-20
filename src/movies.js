@@ -79,9 +79,10 @@ function orderByYear(moviesArray) {
 function orderAlphabetically(moviesArray) {
 
     //crea un nuevo array con los resultados de llamar a una función proporcionada en cada elemento de la matriz.
+    // {title} = moviesArray.movie;
     const cloneMoviesArray = moviesArray.map((movie)=> movie.title);
     /*ordenamos alfabeticamente*/
-    cloneMoviesArray.sort((a, b) =>  a.localeCompare(b));
+    cloneMoviesArray.sort((a, b) => a.localeCompare(b));
     //conseguimos los 20 primeros
      const twetyFirst = cloneMoviesArray.slice(0,20);
      return twetyFirst;
@@ -89,7 +90,9 @@ function orderAlphabetically(moviesArray) {
 }
 
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
-function turnHoursToMinutes(moviesArray) {}
+function turnHoursToMinutes(moviesArray) {
+
+};
 
 // BONUS - Iteration 8: Best yearly score average - Best yearly score average
 function bestYearAvg(moviesArray) {}
